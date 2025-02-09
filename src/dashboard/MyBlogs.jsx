@@ -9,7 +9,7 @@ function MyBlogs() {
     const fetchMyBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "https://blog-app-backend-lake.vercel.app/api/blogs/my-blog",
+          "https://blog-app-backend-gules.vercel.app/api/blogs/my-blog",
           { withCredentials: true }
         );
         console.log(data);
@@ -22,7 +22,7 @@ function MyBlogs() {
   const handleDelete = async (id) => {
     await axios
       .delete(
-        `https://blog-app-backend-lake.vercel.app/api/blogs/delete/${id}`,
+        `https://blog-app-backend-gules.vercel.app/api/blogs/delete/${id}`,
         {
           withCredentials: true,
         }

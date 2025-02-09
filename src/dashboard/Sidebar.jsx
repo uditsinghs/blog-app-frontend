@@ -25,7 +25,7 @@ function Sidebar({ setComponent }) {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        "https://blog-app-backend-lake.vercel.app/api/users/logout",
+        "https://blog-app-backend-gules.vercel.app/api/users/logout",
         { withCredentials: true }
       );
       toast.success(data.message);

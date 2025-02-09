@@ -8,7 +8,7 @@ function Creators() {
     const fetchCreators = async () => {
       try {
         const { data } = await axios.get(
-          "https://blog-app-backend-lake.vercel.app/api/users/admins",
+          "https://blog-app-backend-gules.vercel.app/api/users/admins",
           {
             withCredentials: true,
           }

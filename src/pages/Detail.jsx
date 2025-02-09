@@ -11,7 +11,7 @@ function Detail() {
     const fetchblogs = async () => {
       try {
         const { data } = await axios.get(
-          `https://blog-app-backend-lake.vercel.app/api/blogs/single-blog/${id}`,
+          `https://blog-app-backend-gules.vercel.app/api/blogs/single-blog/${id}`,
 
           {
             withCredentials: true,

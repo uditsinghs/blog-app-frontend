@@ -41,7 +41,7 @@ function Register() {
     formData.append("photo", photo);
     try {
       const { data } = await axios.post(
-        "https://blog-app-backend-lake.vercel.app/api/users/register",
+        "https://blog-app-backend-gules.vercel.app/api/users/register",
         formData,
         {
           withCredentials: true,

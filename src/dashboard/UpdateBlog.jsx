@@ -29,7 +29,7 @@ function UpdateBlog() {
     const fetchBlog = async () => {
       try {
         const { data } = await axios.get(
-          `https://blog-app-backend-lake.vercel.app/api/blogs/single-blog/${id}`,
+          `https://blog-app-backend-gules.vercel.app/api/blogs/single-blog/${id}`,
 
           {
             withCredentials: true,
@@ -60,7 +60,7 @@ function UpdateBlog() {
     formData.append("blogImage", blogImage);
     try {
       const { data } = await axios.put(
-        `https://blog-app-backend-lake.vercel.app/api/blogs/update/${id}`,
+        `https://blog-app-backend-gules.vercel.app/api/blogs/update/${id}`,
         formData,
         {
           withCredentials: true,

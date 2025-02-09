@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
         console.log(token);
         if (token) {
           const { data } = await axios.get(
-            "https://blog-app-backend-lake.vercel.app/api/users/my-profile",
+            "https://blog-app-backend-gules.vercel.app/api/users/my-profile",
             {
               withCredentials: true,
               headers: {
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     const fetchBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "https://blog-app-backend-lake.vercel.app/api/blogs/all-blogs",
+          "https://blog-app-backend-gules.vercel.app/api/blogs/all-blogs",
           { withCredentials: true }
         );
         console.log(data);
