@@ -9,7 +9,7 @@ function MyBlogs() {
     const fetchMyBlogs = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4001/api/blogs/my-blog",
+          "https://blog-app-backend-lake.vercel.app/api/blogs/my-blog",
           { withCredentials: true }
         );
         console.log(data);
@@ -21,9 +21,12 @@ function MyBlogs() {
 
   const handleDelete = async (id) => {
     await axios
-      .delete(`http://localhost:4001/api/blogs/delete/${id}`, {
-        withCredentials: true,
-      })
+      .delete(
+        `https://blog-app-backend-lake.vercel.app/api/blogs/delete/${id}`,
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         toast.success(res.data.message || "Blog deleted successfully");
         setMyBlogs((value) => value.filter((blog) => blog._id !== id));
